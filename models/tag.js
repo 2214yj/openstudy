@@ -6,12 +6,12 @@ module.exports = (sequelize, DataTypes) => {
             allowNull : false,
             primaryKey : true,
         },
-        line : {
-            type :DataTypes.INTEGER,
-            allowNull : false,
-        },
         name : {
             type : DataTypes.STRING(100),
+            allowNull : false,
+        },
+        num_memeber : {
+            type : DataTypes.INTEGER,
             allowNull : false,
         }
     },{

@@ -55,7 +55,7 @@ db.Tag.hasOne(db.Chatlog);
 db.User.hasOne(db.Calendar);
 //user tag
 db.User.belongsToMany(db.Tag,{
-    as : 'enrolledTag',
+    as : 'EnrolledTag',
     foreignKey : 'userId',
     through : 'userTag',
 });
